@@ -13,6 +13,9 @@ variables:
   solution: '**/*.sln'
   buildPlatform: 'Any CPU'
   buildConfiguration: 'Release'
+  name: projectName
+  value: 'projeto rodolfo dev ops'
+
 
 
 steps:
@@ -20,6 +23,13 @@ steps:
 - task: CmdLine@2
   inputs:
     script: 'mkdir d:\a\1\MobEAD' 
+
+
+
+- task: CmdLine@2
+  inputs:
+    script: echo $(projectName)
+
 
 
 - task: NuGetToolInstaller@1
