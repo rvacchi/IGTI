@@ -19,7 +19,7 @@ steps:
 
 - task: CmdLine@2
   inputs:
-    script: 'mkdir c:\a\1\MobEAD' 
+    script: 'mkdir d:\a\1\MobEAD' 
 
 
 - task: NuGetToolInstaller@1
